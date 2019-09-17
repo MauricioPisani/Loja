@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.Clienteactivity">
+
+    <ListView
+        android:id="@+id/lv_clientes"
+        android:layout_width="411dp"
+        android:layout_height="731dp">
+
+        <ImageView
+            android:id="@+id/iv_cliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tv_codigo_cliente"
+            android:layout_width="127dp"
+            android:layout_height="27dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/tv_nome_cliente"
+            android:layout_width="115dp"
+            android:layout_height="24dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/tv_cpf_cliente"
+            android:layout_width="123dp"
+            android:layout_height="28dp"
+            android:text="TextView" />
+
+    </ListView>
+
+</android.support.constraint.ConstraintLayout>

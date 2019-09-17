@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Loja</string>
+    <string name="bt_logar">Logar</string>
+    <string name="content_description_logo_da_empresa">logo da empresa</string>
+    <string name="hint_email_login">email</string>
+    <string name="hint_senha_login">senha</string>
+    <string name="tv_esqueceu_senha_login">Esqueceu sua senha?</string>
+    <string name="toast_preencher_todos_campos">Você deve preencher todos os campos.</string>
+    <string name="toast_falha_autenticacao">Falha na autenticação.</string>
+    <string name="snack_problem_autenticacao" />
+    <string name="msg_invalido" />
+</resources>

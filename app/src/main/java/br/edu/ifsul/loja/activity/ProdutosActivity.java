@@ -45,10 +45,10 @@ public class ProdutosActivity extends AppCompatActivity {
 
                 for(DataSnapshot ds : dataSnapshot.getChildren()){
                     Log.d(TAG, "dataSnapshot=" + ds);
-                Produto produto=ds.getValue(pro);
+                Produto produto=ds.getValue(Produto.class);
                 }
                 //faz o bindView
-                lvProdutos.setAdapter((ListAdapter) new ProdutosAdapter());
+                lvProdutos.setAdapter((ListAdapter) new ProdutosAdapter(ProdutosActivity.this,listProdutos));
 
             }
 

@@ -4,8 +4,6 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.view.View;
-import android.widget.ListAdapter;
 import android.widget.ListView;
 
 import com.google.firebase.database.DataSnapshot;
@@ -21,7 +19,7 @@ import br.edu.ifsul.loja.R;
 import br.edu.ifsul.loja.adapter.ClienteAdapter;
 import br.edu.ifsul.loja.model.Cliente;
 
-public class Clienteactivity extends AppCompatActivity {
+public class ClientesActivity extends AppCompatActivity {
     private static final String TAG = "clienteactivity";
     private ListView lv_clientes;
 
@@ -29,7 +27,7 @@ public class Clienteactivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_clienteactivity);
+        setContentView(R.layout.activity_clientes);
         //mapeia o componente da view
         lv_clientes = findViewById(R.id.lv_clientes);
 
@@ -48,7 +46,7 @@ public class Clienteactivity extends AppCompatActivity {
                     listClientes.add(cliente);
                 }
                 //faz o bindView
-                lv_clientes.setAdapter(new ClienteAdapter(Clienteactivity.this,listClientes));
+                lv_clientes.setAdapter(new ClienteAdapter(ClientesActivity.this,listClientes));
 
             }
 

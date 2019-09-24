@@ -9,4 +9,8 @@
     <string name="toast_falha_autenticacao">Falha na autenticação.</string>
     <string name="snack_problem_autenticacao" />
     <string name="msg_invalido" />
+    <string name="hint_nome_produto">nome_produto</string>
+    <string name="hint_valor_produto">valor_produto</string>
+    <string name="hint_estoque">estoque</string>
+    <string name="contentDescription_nome_produto">nome_produto</string>
 </resources>

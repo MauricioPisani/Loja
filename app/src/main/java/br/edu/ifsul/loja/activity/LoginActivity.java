@@ -75,6 +75,10 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 
+    private void resetarSenha(String email) {
+
+    }
+
     private void signIn(String email, String senha) {
         mAuth.signInWithEmailAndPassword(email, senha)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {

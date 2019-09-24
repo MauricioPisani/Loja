@@ -33,7 +33,7 @@ public class ClienteAdapter extends ArrayAdapter<Cliente> {
         final ViewHolder holder;
 
         if(convertView == null){
-            convertView = LayoutInflater.from(context).inflate(R.layout.item_produto_adapter, parent, false);
+            convertView = LayoutInflater.from(context).inflate(R.layout.clientes_adapter, parent, false);
             holder = new ViewHolder(convertView);
             convertView.setTag(holder);
         }else{

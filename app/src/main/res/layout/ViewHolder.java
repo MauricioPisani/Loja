@@ -1,22 +1,6 @@
-package br.edu.ifsul.loja.adapter;
+package layout;
 
-import android.content.Context;
-import android.support.annotation.NonNull;
-import android.widget.ArrayAdapter;
-
-import java.util.List;
-
-import br.edu.ifsul.loja.model.ItemPedido;
-
-public class CarrinhoAdapter extends ArrayAdapter<ItemPedido> {
-    private final Context context;
-
-    public CarrinhoAdapter(@NonNull Context context, @NonNull List<ItemPedido> carrinho) {
-        super(context, 0,carrinho);
-        this.context = context;
-    }
-
-    @NonNull
+@NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         final ViewHolder holder;
@@ -57,5 +41,3 @@ public class CarrinhoAdapter extends ArrayAdapter<ItemPedido> {
             pbFotoDoProduto = view.findViewById(R.id.pb_foto_carrinho);
         }
     }
-
-}

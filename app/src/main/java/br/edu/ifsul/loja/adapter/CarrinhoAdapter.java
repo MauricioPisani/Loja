@@ -2,10 +2,19 @@ package br.edu.ifsul.loja.adapter;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
+import android.widget.ProgressBar;
+import android.widget.TextView;
 
+import java.text.NumberFormat;
 import java.util.List;
 
+import br.edu.ifsul.loja.R;
 import br.edu.ifsul.loja.model.ItemPedido;
 
 public class CarrinhoAdapter extends ArrayAdapter<ItemPedido> {
@@ -42,6 +51,8 @@ public class CarrinhoAdapter extends ArrayAdapter<ItemPedido> {
         return convertView;
     }
 
+
+
     private class ViewHolder{
         final TextView tvNome;
         final TextView tvQuantidade;
@@ -50,12 +61,11 @@ public class CarrinhoAdapter extends ArrayAdapter<ItemPedido> {
         final ProgressBar pbFotoDoProduto;
 
         public ViewHolder(View view){
-            tvNome = view.findViewById(R.id.tvNomeCarrinhoAdapter);
+            tvNome = view.findViewById(R.id.tvNomeProdutoCarrinhoAdapter);
             tvQuantidade = view.findViewById(R.id.tvQuantidadeDeProdutoCarrinhoAdapater);
             tvValor = view.findViewById(R.id.tvTotalItemCarrinhoAdapter);
             imvFoto = view.findViewById(R.id.imvFotoProdutoCarrinhoAdapter);
             pbFotoDoProduto = view.findViewById(R.id.pb_foto_carrinho);
         }
     }
-
 }

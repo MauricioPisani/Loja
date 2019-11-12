@@ -11,6 +11,6 @@ import br.edu.ifsul.loja.model.User;
 public class AppSetup {
     public static User user = null;
     public static List<Produto> listProdutos = new ArrayList<>();
-    public static Cliente cliente = null;
+    public static Cliente cliente =null;
     public static ArrayList<ItemPedido> carrinho = new ArrayList<>();
 }

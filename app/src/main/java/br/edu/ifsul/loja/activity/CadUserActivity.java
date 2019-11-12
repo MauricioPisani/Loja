@@ -15,9 +15,9 @@ public class CadUserActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cad_user);
-        TextView tv_nome=findViewById(R.id.tv_nome_cadUser;
-        TextView tv_email=findViewById(R.id.tv_email_cadUser;
-        EditText ed_senha=findViewById(R.id.ed_senha_cadUser;
+        TextView tv_nome=findViewById(R.id.tv_nome_cadUser);
+        TextView tv_email=findViewById(R.id.tv_email_cadUser);
+        EditText ed_senha=findViewById(R.id.ed_senha_cadUser);
 
 
     }

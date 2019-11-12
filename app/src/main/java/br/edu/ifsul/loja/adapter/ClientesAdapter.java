@@ -16,14 +16,14 @@ import java.util.List;
 import br.edu.ifsul.loja.R;
 import br.edu.ifsul.loja.model.Cliente;
 
-public class ClienteAdapter extends ArrayAdapter<Cliente> {
+public class ClientesAdapter extends ArrayAdapter<Cliente> {
     private final Context context;
 
     {
 
 }
 
-    public ClienteAdapter(@NonNull Context context, @NonNull List<Cliente> clientes) {
+    public ClientesAdapter(@NonNull Context context, @NonNull List<Cliente> clientes) {
         super(context, 0, clientes);
         this.context = context;
 }
@@ -43,7 +43,7 @@ public class ClienteAdapter extends ArrayAdapter<Cliente> {
         Cliente cliente = getItem(position);
         holder.tv_nome_cliente.setText(cliente.getNome());
         holder.tv_codigo_cliente.setText(cliente.getCodigoDeBarras().toString());
-        holder.tv_cpf_cliente.setText(cliente.getCpf());
+        //holder.tv_cpf_cliente.setText(cliente.getCpf());
 
         return convertView;
     }
@@ -51,16 +51,16 @@ public class ClienteAdapter extends ArrayAdapter<Cliente> {
     private class ViewHolder{
         final TextView tv_nome_cliente;
         final TextView tv_codigo_cliente;
-        final TextView tv_cpf_cliente;
+        //final TextView tv_cpf_cliente;
         final ImageView iv_cliente;
-        //final ProgressBar pbFotoDoCliente;
+        final ProgressBar pbFotoDoCliente;
 
         public ViewHolder(View view){
-            tv_nome_cliente = view.findViewById(R.id.tv_nome_cliente);
-            tv_codigo_cliente= view.findViewById(R.id.tv_codigo_cliente);
-            tv_cpf_cliente= view.findViewById(R.id.tv_cpf_cliente);
-            iv_cliente= view.findViewById(R.id.iv_cliente);
-            //pbFotoDoProduto = view.findViewById(R.id.pb_foto_produtos_adapter);
+            tv_nome_cliente = view.findViewById(R.id.tvNomeClienteAdapter);
+            tv_codigo_cliente= view.findViewById(R.id.tvDetalhesDoClienteAdapater);
+            //tv_cpf_cliente= view.findViewById(R.id.tvC);
+            iv_cliente= view.findViewById(R.id.imvFotoDoClienteAdapter);
+            pbFotoDoCliente = view.findViewById(R.id.pb_foto_produtos_adapter);
         }
     }
 }

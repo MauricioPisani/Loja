@@ -70,4 +70,11 @@
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
     <string name="titulo_janela_galeria_imagens">Selecione sua foto</string>
+    <string name="snack_preencher_todos_campos">Preencher todos os campos</string>
+    <string name="toast_produto_salvo">Produto salvo</string>
+    <string name="snack_operacao_falhou">Operaçao falhou</string>
+    <string name="toast_produto_nao_cadastrado">Produto no cadastrado</string>
+    <string name="message_processando">Processando</string>
+    <string name="toast_foto_produto_upload_fail">Falha no upload da foto do produto</string>
+    <string name="toast_codigo_barras_ja_cadastrado">Codigo de barras ja cadastrado</string>
 </resources>

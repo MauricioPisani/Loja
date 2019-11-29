@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CadClienteActivity">
+
+    <TextView
+        android:id="@+id/tv_cadCliente_nome"
+        android:layout_width="175dp"
+        android:layout_height="27dp"
+        android:text="@string/hint_nome_do_cliente"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="143dp" />
+
+    <TextView
+        android:id="@+id/tv_cadCliente_cpf"
+        android:layout_width="154dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="92dp"
+        android:text="Cpf do cliente"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cadCliente_nome" />
+
+    <TextView
+        android:id="@+id/tv_cadCliente_sobrenome"
+        android:layout_width="93dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:text="Sobrenome do cliente"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_cadCliente_nome"
+        tools:layout_editor_absoluteY="143dp" />
+
+    <ImageView
+        android:id="@+id/iv_cadCliente_foto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="448dp"
+        tools:srcCompat="@tools:sample/avatars[5]" />
+
+    <Button
+        android:id="@+id/bt_cadCliente_cadastrar"
+        android:layout_width="147dp"
+        android:layout_height="54dp"
+        android:background="@color/colorPrimary"
+        android:text="Cadastrar"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="624dp" />
+
+    <EditText
+        android:id="@+id/ed_cadCliente_codBarras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberSigned"
+        tools:layout_editor_absoluteX="17dp"
+        tools:layout_editor_absoluteY="331dp" />
+</android.support.constraint.ConstraintLayout>

@@ -1,14 +1,11 @@
 package br.edu.ifsul.loja.model;
 
-import android.view.View;
-
 import com.google.firebase.database.Exclude;
 
 import java.io.Serializable;
 import java.util.ArrayList;
 
 public class Cliente implements Serializable {
-    private String key;
     private Long codigoDeBarras;
     private String cpf;
     private String nome;
@@ -19,16 +16,6 @@ public class Cliente implements Serializable {
     private Integer index; //atributo apenas local (as anotações "exclude no get e no set determina isso)
 
     public Cliente() {
-    }
-
-    @Exclude
-    public String getKey() {
-        return key;
-    }
-
-    @Exclude
-    public void setKey(String key) {
-        this.key = key;
     }
 
     public Long getCodigoDeBarras() {

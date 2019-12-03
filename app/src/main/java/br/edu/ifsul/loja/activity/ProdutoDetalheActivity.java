@@ -47,7 +47,7 @@ public class ProdutoDetalheActivity extends AppCompatActivity {
 
         //obtém o position do objeto produto a a partir da intent
         int position = getIntent().getExtras().getInt("position");
-        produto = AppSetup.listProdutos.get(position);
+        produto = AppSetup.produtos.get(position);
 
         //mapeia os componentes da view
         tvNome = findViewById(R.id.tvNomeProduto);

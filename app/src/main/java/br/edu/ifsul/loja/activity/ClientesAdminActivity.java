@@ -24,7 +24,7 @@ public class ClientesAdminActivity extends AppCompatActivity {
         c.setCpf(cpf);
         c.setCodigoDeBarras(barras);
         c.setUrl_foto(foto);
-        final DatabaseReference myRef = FirebaseDatabase.getInstance().getReference().child("vendas/clientes/" + c.getKey() + "/nome");
+        final DatabaseReference myRef = FirebaseDatabase.getInstance().getReference().child("vendas/clientes/");
 myRef.push().setValue(c);
     }
 }

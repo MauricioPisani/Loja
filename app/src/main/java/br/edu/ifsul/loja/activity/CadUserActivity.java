@@ -56,7 +56,7 @@ public class CadUserActivity extends AppCompatActivity {
                             Snackbar.make(findViewById(R.id.CadUserActivity), getString(R.string.toast_falha_autenticacao), Snackbar.LENGTH_LONG).show();
                         }
                     }
-                }
+                });
     }
     private void sendEmailVerification() {
         final FirebaseUser user = mAuth.getCurrentUser();
@@ -65,10 +65,10 @@ public class CadUserActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
                         if (task.isSuccessful()) {
-                            Snackbar.make(findViewById(R.id.R_id_container_activity_user), "Email de verificação enviado para " + user.getEmail(), Snackbar.LENGTH_SHORT).show();
+                            Snackbar.make(findViewById(R.id.CadUserActivity), "Email de verificação enviado para " + user.getEmail(), Snackbar.LENGTH_SHORT).show();
                         } else {
                             Log.e(TAG, "sendEmailVerification", task.getException());
-                            Snackbar.make(findViewById(R.id.R_id_container_activity_user),"Envio de email para verifiacão falhou.", Snackbar.LENGTH_SHORT).show();
+                            Snackbar.make(findViewById(R.id.CadUserActivity),"Envio de email para verifiacão falhou.", Snackbar.LENGTH_SHORT).show();
                         }
                     }
                 });

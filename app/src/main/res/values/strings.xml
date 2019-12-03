@@ -77,4 +77,15 @@
     <string name="message_processando">Processando</string>
     <string name="toast_foto_produto_upload_fail">Falha no upload da foto do produto</string>
     <string name="toast_codigo_barras_ja_cadastrado">Codigo de barras ja cadastrado</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="foto_do_produto">Foto do produto</string>
+    <string name="label_nome">label_nome</string>
+    <string name="label_descricao">label_descricao</string>
+    <string name="hint_descricao_produto">descricao_produto</string>
+    <string name="label_valor">label_valor</string>
+    <string name="hint_digite_valor">digite_valor</string>
+    <string name="label_quantidade">label_quantidade</string>
+    <string name="hint_quantidade_digite">quantidade_digite</string>
+    <string name="bt_salvar">bt_salvar</string>
+    <string name="menu_limparform">menu_limparform</string>
 </resources>

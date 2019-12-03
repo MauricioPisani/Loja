@@ -31,6 +31,10 @@ public class CadClienteActivity extends AppCompatActivity {
         ImageView iv_cadCliente_foto=findViewById(R.id.iv_cadCliente_foto);
         String codBarras=ed_cadCliente_codBarras.toString();
         long barras=Long.parseLong(codBarras);
+        String nome=tv_cadCliente_nome.toString();
+        String sobrenome=tv_cadCliente_sobrenome.toString();
+        String cpf=tv_cadCliente_cpf.toString();
+
         iv_cadCliente_foto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -43,5 +47,8 @@ public class CadClienteActivity extends AppCompatActivity {
             }
         });
 
+String foto=iv_cadCliente_foto.toString();
+ClientesAdminActivity admc=new ClientesAdminActivity();
+admc.cadastrar(nome,sobrenome,cpf,barras,foto);
     }
 }

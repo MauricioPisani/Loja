@@ -34,5 +34,11 @@ myRef.push().setValue(c);
         myRef.child(c.getKey()).child("situacao").setValue(false);
         Snackbar.make(findViewById(R.id.container_cliente_admin), R.string.snack_cliente_excluido, Snackbar.LENGTH_LONG).show();
 
+    }    public void recuperaCliente(){
+        Cliente c=new Cliente();
+        final DatabaseReference myRef = FirebaseDatabase.getInstance().getReference().child("vendas/clientes/");
+        myRef.child(c.getKey()).child("situacao").setValue(true);
+        Snackbar.make(findViewById(R.id.container_cliente_admin), R.string.snack_cliente_excluido, Snackbar.LENGTH_LONG).show();
+
     }
 }

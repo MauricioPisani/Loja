@@ -88,4 +88,5 @@
     <string name="hint_quantidade_digite">quantidade_digite</string>
     <string name="bt_salvar">bt_salvar</string>
     <string name="menu_limparform">menu_limparform</string>
+    <string name="snack_cliente_excluido">Cliente excluido</string>
 </resources>
